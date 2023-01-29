@@ -16,7 +16,7 @@
     width: 50%;
   }
   
-  .services {
+  .STATHub-page {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     font-size: 100px;
   }
   
-  .products {
+  .past-seasons {
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@
     font-size: 100px;
   }
   
-  .sign-up {
+  .log-in {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
