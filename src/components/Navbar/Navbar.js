@@ -1,11 +1,25 @@
 import React, {useState} from 'react'
+import { Button } from '../Button/Button'
 import { Link } from 'react-router-dom'
+import './Navbar.css'
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false);
+
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+            setButton(false);
+        } else {
+            setButton(true)
+        }
+    };
+
+    window.addEventListener('resize',showButton);
 
     return (
 <>
@@ -19,18 +33,8 @@ function Navbar() {
             </div>
             <ul className = {click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                    Home
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to='/corners' className='nav-links' onClick={closeMobileMenu}>
-                    Corners
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to='/penalties' className='nav-links' onClick={closeMobileMenu}>
-                    Penalties
+                    <Link to='/stathub' className='nav-links' onClick={closeMobileMenu}>
+                    STATHub
                     </Link>
                 </li>
                 <li className='nav-item'>
@@ -38,12 +42,8 @@ function Navbar() {
                     Past Seasons
                     </Link>
                 </li>
-                <li className='nav-item'>
-                    <Link to='/add-game' className='nav-links' onClick={closeMobileMenu}>
-                    Add Game
-                    </Link>
-                </li>
             </ul>
+            {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}
 
         </div>
   </nav>
