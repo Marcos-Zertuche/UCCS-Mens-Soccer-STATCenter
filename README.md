@@ -7,6 +7,6 @@ UCCS Men's Soccer STATHub provides a statistical analysis of different aspects o
 
 ## Data Analyzed
 
-1. Corner Kicks
-2. Penalty Kicks
+1. `Corner Kicks`
+2. `Penalty Kicks`
 
