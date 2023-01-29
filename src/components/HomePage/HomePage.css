@@ -1,0 +1,16 @@
+.background-image{
+    background-image: url(../../Assets/Images/UCCS_Mountain_Lions_logo.png);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    }
+
+.welcome-page{
+    height:50%;
+    padding: 10px;
+    font-size: large;
+    font-weight: 400;
+
+}

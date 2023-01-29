@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
+import HomePage from './components/HomePage/HomePage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' exact />
         </Routes>
       </Router> 
+      <HomePage/>
     </>
   );
 }
