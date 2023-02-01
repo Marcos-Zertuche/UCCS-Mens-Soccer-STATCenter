@@ -6,7 +6,7 @@
   }
   
   .home,
-  .STATHub-page,
+  .statcenter-page,
   .past-seasons {
     display: flex;
     height: 90vh;
@@ -16,7 +16,7 @@
     width: 50%;
   }
   
-  .STATHub-page {
+  .statcenter-page {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

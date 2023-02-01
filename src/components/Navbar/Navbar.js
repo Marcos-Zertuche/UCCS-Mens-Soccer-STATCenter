@@ -30,15 +30,15 @@ function Navbar() {
     <nav className = "navbar">
         <div className="navbar-container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}> 
-            UCCS Men's Soccer STATHub <img></img>
+            UCCS Men's Soccer STATCenter <img></img>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className = {click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
             <ul className = {click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                    <Link to='/stathub' className='nav-links' onClick={closeMobileMenu}>
-                    STATHub
+                    <Link to='/statcenter' className='nav-links' onClick={closeMobileMenu}>
+                    STATCenter
                     </Link>
                 </li>
                 <li className='nav-item'>
