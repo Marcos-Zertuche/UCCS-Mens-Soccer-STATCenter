@@ -10,7 +10,7 @@ function HomePage() {
         <h1 className='welcome-page'>
             what is going on here
         </h1>
-        More Words test
+        More Words test 
     </div>
   )
 }
